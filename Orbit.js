@@ -17,3 +17,6 @@ function orbitalPeriod(arr) {
 
 // test here
 orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
+
+// physics formula 
+// relational gravity put into consederation
