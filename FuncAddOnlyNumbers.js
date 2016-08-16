@@ -1,5 +1,6 @@
 
 function addTogether() {
+  var temp = [];
   var checkNum = function(num){
     
       if(typeof num !== 'number'){
