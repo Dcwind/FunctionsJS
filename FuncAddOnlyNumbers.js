@@ -1,6 +1,7 @@
 
 function addTogether() {
   var temp = [];
+  var input = [];
   var checkNum = function(num){
     
       if(typeof num !== 'number'){
@@ -45,3 +46,4 @@ function addTogether() {
 }
 
 addTogether(2,3);
+// input variable was added
