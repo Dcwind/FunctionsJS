@@ -222,3 +222,4 @@ function makeFriendlyDates(str) {
 makeFriendlyDates(['2016-07-01', '2016-07-04']);
 
 */
+// same case different approach
