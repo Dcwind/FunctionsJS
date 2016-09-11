@@ -8,3 +8,4 @@ function translatePigLatin(str) {
 
 // test here
 translatePigLatin("consonant");
+// adds ay to word ending with consonants
