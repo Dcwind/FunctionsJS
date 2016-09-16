@@ -25,4 +25,17 @@ console.log("You are at a Justin Bieber concert, and you hear this lyric 'Lace m
 
 console.log("Suddenly, Bieber stops and says, 'Who wants to race me?'");
 
+
+// quarter functions
+var quarter = function(number){
+    return number/4;
+}
+
+
+if (quarter(12) % 3 === 0 ) {
+  console.log("The statement is true");
+} else {
+  console.log("The statement is false");
+}
+
 var userAnswer = prompt('Do you want to race Bieber on stage?"');
