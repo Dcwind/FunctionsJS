@@ -1,6 +1,6 @@
 var speed = 65;
 
-// Complete the condition in the ()s on line 4
+// simple speed notification function
 if (speed > 80 ) {
 	// Use console.log() to print "Slow down"
 	console.log("slow down mofo");
@@ -26,7 +26,7 @@ console.log("You are at a Justin Bieber concert, and you hear this lyric 'Lace m
 console.log("Suddenly, Bieber stops and says, 'Who wants to race me?'");
 
 
-// quarter functions
+// quarter function
 var quarter = function(number){
     return number/4;
 }
