@@ -39,3 +39,12 @@ var sleepCheck = function (numHours){
 sleepCheck(10);
 sleepCheck(5);
 sleepCheck(8);
+
+// rock paper scissors
+var userChoice = function (){
+    var input = prompt("Do you choose rock, paper or scissors?");
+}
+
+var computerChoice = Math.random();
+
+console.log(computerChoice);
