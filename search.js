@@ -12,6 +12,7 @@ var hits = [];
 
 for(var i = 0; i < text.length; i++){
     
+    // can made into a function
     if (text[i] === "D"){
         
         for(var j = i; j <(myName.length + i); j++ ){
@@ -25,3 +26,4 @@ if (hits.length === 0){
 }else{
     console.log(hits);   
 }
+
