@@ -21,3 +21,4 @@ while (slaying) {
     slaying = false;
   }
 }
+//algorith
