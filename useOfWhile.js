@@ -22,3 +22,4 @@ while (slaying) {
   }
 }
 //algorith
+//lexical scoping and global scoping
