@@ -1,5 +1,4 @@
-// create a constructor for the StaffMember class
-function StaffMember (name,discountPercent) {
+function StaffMember(name,discountPercent){
     this.name = name;
     this.discountPercent = discountPercent;
 }
@@ -7,22 +6,18 @@ function StaffMember (name,discountPercent) {
 var sally = new StaffMember("Sally",5);
 var bob = new StaffMember("Bob",10);
 
-//Create a StaffMember for yourself called me
-
+// Create yourself again as 'me' with a staff discount of 20%
 var me = new StaffMember("me",20);
 
 var cashRegister = {
     total:0,
-    //Dont forget to add your property
-    lastTransactionAmount:0,
-    
-    add: function(itemCost) {
+    lastTransactionAmount: 0,
+    add: function(itemCost){
+        this.total += (itemCost || 0);
         this.lastTransactionAmount = itemCost;
-        this.total +=  itemCost;
-        
     },
-    scan: function(item,quantity) {
-        switch (item) {
+    scan: function(item,quantity){
+        switch (item){
         case "eggs": this.add(0.98 * quantity); break;
         case "milk": this.add(1.23 * quantity); break;
         case "magazine": this.add(4.99 * quantity); break;
@@ -30,21 +25,23 @@ var cashRegister = {
         }
         return true;
     },
-    //Add the voidLastTransaction Method here
-    voidLastTransaction: function(){
-        this.total -= this.lastTransactionAmount;     
+    voidLastTransaction : function(){
+        this.total -= this.lastTransactionAmount;
+        this.lastTransactionAmount = 0;
+    },
+    // Create a new method applyStaffDiscount here
+    applyStaffDiscount: function (employee) {
+        this.total -= this.total * (employee.discountPercent/100);
     }
     
 };
 
 cashRegister.scan('eggs',1);
 cashRegister.scan('milk',1);
-cashRegister.scan('magazine',1);
-cashRegister.scan('chocolate',4);
+cashRegister.scan('magazine',3);
+// Apply your staff discount by passing the 'me' object 
+// to applyStaffDiscount
+cashRegister.applyStaffDiscount(me);
 
-//Void the last transaction and then add 3 instead
-cashRegister.voidLastTransaction();
-
-cashRegister.scan('chocolate',3);
-//Show the total bill
-console.log('Your bill is '+cashRegister.total);
+// Show the total bill
+console.log('Your bill is '+cashRegister.total.toFixed(2));
