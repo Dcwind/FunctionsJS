@@ -46,9 +46,9 @@ var ReactDOM = require('react-dom');
 
 var people = ['Rowe', 'Prevost', 'Gare'];
 
-var peopleLIs = people.map(function(person){
+var peopleLIs = people.map(function(person, i){
   // return statement goes here:
-  return <li>{person}</li>;
+  return <li key={'person_' + i}>{person}</li>;
 
 });
 
