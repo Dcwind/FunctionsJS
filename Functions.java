@@ -53,7 +53,8 @@ public class Olympics {
 
 	public static void main(String[] args) {
 
-		//Some Olympic sports struc
+		//Some Olympic sports 
+		//struc - ArrayList
 
 		ArrayList<String> olympicSports = new ArrayList<String>();
 		olympicSports.add("Archery");
