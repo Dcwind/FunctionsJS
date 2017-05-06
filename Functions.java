@@ -108,6 +108,12 @@ public class Temperatures {
     weeklyTemperatures.add(94);
 		
 	System.out.println( weeklyTemperatures.get(2) );
+		
+	for (int i = 0; i < quizGrades.size(); i++) {
+
+    	 System.out.println( quizGrades.get(i) );
+
+	}
 
 
 	}
