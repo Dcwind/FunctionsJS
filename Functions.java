@@ -114,7 +114,11 @@ public class Temperatures {
     	 System.out.println( quizGrades.get(i) );
 
 	}
+	
+		for (Integer temperature : weeklyTemperatures) {
+			System.out.println(temperature);
+		}
 
 
-	}
+    }
 }
