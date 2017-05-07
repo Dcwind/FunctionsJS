@@ -118,7 +118,7 @@ public class Temperatures {
 		for (Integer temperature : weeklyTemperatures) {
 			System.out.println(temperature);
 		}
-
+	HashMap<String, Integer> restaurantMenu = new HashMap<String, Integer>();
 
     }
 }
