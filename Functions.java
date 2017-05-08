@@ -124,7 +124,12 @@ public class Temperatures {
     	restaurantMenu.put("Cranberry Kale Salad", 10);
 		
 	System.out.println( restaurantMenu.get("Naan Pizza") );
+		
+	System.out.println(restaurantMenu.size());
 
+		for (String item : restaurantMenu.keySet()) {
 
-    }
+			System.out.println("A " + item + " costs " + restaurantMenu.get(item) + " dollars.");
+
+    		}
 }
