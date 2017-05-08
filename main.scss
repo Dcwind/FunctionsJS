@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 //Add variables here:
+$translucent-white: rgba(255,255,255,0.3);
+$icon-square-length: 300px;
 
 h1 {
   font-family: Roboto, sans-serif;
@@ -41,6 +43,8 @@ h1 {
   	margin: 2%;
   	border: 4px solid black;
   	font-size: 32px;
+	width: $icon-square-length;
+	height: $icon-square-length;
 	}
 }
 
