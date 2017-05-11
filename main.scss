@@ -54,18 +54,18 @@ h1 {
   @include transform (rotatey(-180deg));  
 }
 
-@mixin backface-visibility {
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
+@mixin backface-visibility($visibility) { //Add an argument
+  backface-visibility: $visibility;
+  -webkit-backface-visibility: $visibility;
+  -moz-backface-visibility: $visibility;
+  -ms-backface-visibility: $visibility;
+  -o-backface-visibility: $visibility;
 }
 
 .front, .back {
   width: 100%;
   height: 100%;
   position: absolute;
-  @include backface-visibility;
+  @include backface-visibility(hidden);
 }
 
