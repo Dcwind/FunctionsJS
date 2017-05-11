@@ -54,7 +54,7 @@ h1 {
   @include transform (rotatey(-180deg));  
 }
 
-@mixin backface-visibility($visibility) { //Add an argument
+@mixin backface-visibility($visibility: hidden) { //Add an argument
   backface-visibility: $visibility;
   -webkit-backface-visibility: $visibility;
   -moz-backface-visibility: $visibility;
