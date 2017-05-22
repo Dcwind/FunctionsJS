@@ -17,3 +17,7 @@ $(document).ready(function() {
 // $(document).ready(function() {
 //     $("div").fadeOut(1000);
 // });
+
+<script type="text/javascript" src="script.js">
+    $(document).ready(script.js);
+</script>
