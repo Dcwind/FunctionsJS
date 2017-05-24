@@ -24,6 +24,6 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('button').click(function() {
-        $('.vanish').fadeOut('slow');
+        $('#blue').fadeOut('slow');
     });
 });
