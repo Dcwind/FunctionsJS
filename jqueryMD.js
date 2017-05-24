@@ -21,3 +21,9 @@ $(document).ready(function() {
 <script type="text/javascript" src="script.js">
     $(document).ready(script.js);
 </script>
+
+$(document).ready(function() {
+    $('button').click(function() {
+        $('.vanish').fadeOut('slow');
+    });
+});
