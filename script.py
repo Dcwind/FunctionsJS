@@ -10,3 +10,9 @@ upstairs = areas[6:]
 # Print out downstairs and upstairs
 print(downstairs)
 print(upstairs)
+
+# Correct the bathroom area
+areas[-1] = 10.50
+
+# Change "living room" to "chill zone"
+areas[4] = "chill zone"
