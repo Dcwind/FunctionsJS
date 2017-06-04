@@ -62,3 +62,8 @@ print(room_up)
 
 # Print out the number of o's in room
 print(room.count("o"))
+
+# Print out the index of the element 20.0
+print(areas.index(20.0))
+# Reverse the orders of the elements in areas
+areas.reverse()
