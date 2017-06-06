@@ -124,3 +124,12 @@ np_height_m = np_height * 0.0254
 
 # Print np_height_m
 print(np_height_m)
+
+# Create the light array
+light = bmi < 21
+
+# Print out light
+print(light)
+
+# Print out BMIs of all baseball players whose BMI is below 21
+print(bmi[light])
