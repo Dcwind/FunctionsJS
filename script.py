@@ -180,3 +180,5 @@ corr = np.corrcoef(np_baseball[:,0],np_baseball[:,1])
 print("Correlation: " + str(corr))
 
 # Convert positions and heights to numpy arrays: np_positions, np_heights
+np_positions = np.array(positions)
+np_heights = np.array(height)
