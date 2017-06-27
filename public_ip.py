@@ -28,6 +28,8 @@ ip_location = ip_page_location[loc_index_start:loc_index_stop]
 print('Public IP: ' +public_ip)
 print('Location: '+ ip_location)
 
+#visits a site to get public ip
+
 
 
 
