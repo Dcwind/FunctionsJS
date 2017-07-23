@@ -1,0 +1,8 @@
+const x = 23;
+const y = 345;
+
+const word = "is greater than";
+
+let st = `${y} ${word} ${x}`;
+
+console.log(st,typeof(st),st.indexOf("z"));
