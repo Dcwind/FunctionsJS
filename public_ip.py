@@ -1,6 +1,8 @@
 # Author: Daniel Ekwuazi (danielekwuazi@gmail.com)
 # 24 June 2017
 
+#run with python2
+
 import urllib2
 
 
